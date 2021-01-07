@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spin wheel front end</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="bloc_1">
+            <img src="./assets/logo.jpeg" class="logo" alt="logo">
+            <img src="./assets/logo.png" class="logo_spin" alt="logo_spin">
+            <div class="jackpot_box">
+                <div class="jackpot">
+                    <span class="jackpotLabel">JACKPOT</span>
+                    <span class="jackpotValue">CFA 0.00</span>
+                    <img src="./assets/img1wheel.png" alt="">
+                </div>
+                <div class="mega_jackpot">
+                    <span class="jackpotLabel">MEGA JACKPOT</span>
+                    <span class="jackpotValue">CFA 0.00</span>
+                    <img src="./assets/img2wheel.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bloc_2">
+            <div id="spin_box">
+                <img class="active" src="./assets/TETEDELECTURE.png" />
+                <img class="wheel" src="./assets/roue.png" />
+                <div id="numberOutput"></div>
+            </div>
+
+
+            <div class="tirage_box">
+                <span>TIRAGE: </span>
+                <span>21323232</span>
+            </div>
+        </div>
+
+        <div class="bloc_3">
+            <div class="time_container">
+                <div class="time_box">
+                </div>
+                <div id="time_box_left">
+                </div>
+                <div class="time_left">
+                    <span id="minute_secnd"></span>
+                </div>
+            </div>
+            <div class="gain_stats">
+                <div class="overlay"></div>
+                <div class="gain">
+                    <div class="bloc_3_title title_main title_main_gain">GAIN</div>
+                    <div class="item1">NUMERO</div>
+                    <div style="border-top:1.5px solid #828282;" class="item2">X12</div>
+                    <div class="item1 items_colors">COULEURS</div>
+                    <div>
+                        <div class="item2" style="width:100%;background:red">X12</div>
+                        <div class="item2" style="width:100%;background:green">X12</div>
+                        <div class="item2" style="width:100%;background:black">X12</div>
+                    </div>
+                    <div class="item1">MIRROR</div>
+                    <div class="item2">X12</div>
+                    <div class="item1">TWINS</div>
+                    <div class="item2">X12</div>
+                    <div class="item1">FINALS</div>
+                    <div class="item2">X12</div>
+                    <div class="item1">LOW/HIGH & COLORS</div>
+                    <div class="item2">X12</div>
+                    <div class="item1">DOUZAINES</div>
+                    <div class="item2">X12</div>
+                    <div class="item1">PAIR/IMPAIR</div>
+                    <div class="item2">X12</div>
+                    <div class="item1">LOW/HIGH</div>
+                    <div class="item2">X12</div>
+                </div>
+
+                <div class="stats_box">
+                    <div class="bloc_3_title title_main title_main_stats">STATISTIQUES</div>
+                    <div class="stat_box_slide">
+                        <div class="stat_1 slide" style="margin-top: 5px">
+                            <span class="bloc_3_title_sub">NOMBRES (12 derniers tirages) </span>
+                            <div class="stats">
+                                <div class="stats_item">
+                                    <div class="stats_item_color colorRed">1</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">2</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">3</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">4</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">5</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">6</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">7</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">8</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">9</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">10</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">11</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed" style="  border-bottom:  1.5px solid #828282;">12</div>
+                                    <div class="stats_item_value" style="  border-bottom:  1.5px solid #828282;">5</div>
+                                </div>
+
+                                <div class="stats_item">
+                                    <div class="stats_item_color colorBlack">13</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">14</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">15</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">16</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">17</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">18</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">19</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">20</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">21</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">22</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">23</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack" style="  border-bottom:  1.5px solid #828282;">24</div>
+                                    <div class="stats_item_value" style="  border-bottom:  1.5px solid #828282;">5</div>
+                                </div>
+
+                                <div class="stats_item">
+                                    <div class="stats_item_color colorRed">25</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">26</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">27</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">28</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">29</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">30</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">31</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">32</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">33</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed">34</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorBlack">35</div>
+                                    <div class="stats_item_value">5</div>
+                                    <div class="stats_item_color colorRed" style="  border-bottom:  1.5px solid #828282;">36</div>
+                                    <div class="stats_item_value" style="  border-bottom:  1.5px solid #828282;">3</div>
+                                </div>
+                            </div>
+                            <div style="height:6%;color:white;display:flex;flex-direction: row; justify-content: center;width:100%;border:  1.5px solid #828282">
+                                <div style="height:100%;background:green; width: 50%;text-align: center">0</div>
+                                <div style="height:100%;background: #404143; width: 50%;text-align: center ">1</div>
+                            </div>
+                        </div>
+
+                        <div class="stat_2 slide">
+                            <span class="stat_2_label">COLORS</span>
+                            <div class="stat_2_value_1_container">
+                                <div class="stats_color_1">12</div>
+                                <div class="stats_color_2">3</div>
+                                <div class="stats_color_3">1</div>
+                            </div>
+
+                            <span class="stat_2_label">DOUZAINE</span>
+                            <div class="stat_2_value_1_container">
+                                <div class="stat_2_value_1_container_label">1-12</div>
+                                <div class="stat_2_value_1_container_value">3</div>
+                                <div class="stat_2_value_1_container_label">13-24</div>
+                                <div class="stat_2_value_1_container_value">3</div>
+                                <div class="stat_2_value_1_container_label">2-25</div>
+                                <div class="stat_2_value_1_container_value">3</div>
+                            </div>
+
+                            <span class="stat_2_label">PAIR/IMPAIR</span>
+                            <div class="stat_2_value_1_container">
+                                <div class="stat_2_value_1_container_label">PAIR</div>
+                                <div class="stat_2_value_1_container_value">39</div>
+                                <div class="stat_2_value_1_container_label">IMPAIR</div>
+                                <div class="stat_2_value_1_container_value">59</div>
+                            </div>
+
+                            <span class="stat_2_label">LOW/HIGH</span>
+                            <div class="stat_2_value_1_container">
+                                <div class="stat_2_value_1_container_label">LOW</div>
+                                <div class="stat_2_value_1_container_value">39</div>
+                                <div class="stat_2_value_1_container_label">HIGH</div>
+                                <div class="stat_2_value_1_container_value">59</div>
+                            </div>
+
+                            <span class="stat_2_label">FINALS</span>
+                            <div class="stat_2_value_1_container_final">
+                                <div class="stat_2_value_1_container_label_container">
+                                    <div class="stat_2_value_1_container_label">1</div>
+                                    <div class="stat_2_value_1_container_label">21</div>
+                                    <div class="stat_2_value_1_container_label">31</div>
+                                    <div class="stat_2_value_1_container_label">14</div>
+                                    <div class="stat_2_value_1_container_label">32</div>
+                                    <div class="stat_2_value_1_container_label">25</div>
+                                    <div class="stat_2_value_1_container_label">54</div>
+                                </div>
+                                <div class="stat_2_value_1_container_value_container">
+                                    <div class="stat_2_value_1_container_value">10</div>
+                                    <div class="stat_2_value_1_container_value">12</div>
+                                    <div class="stat_2_value_1_container_value">15</div>
+                                    <div class="stat_2_value_1_container_value">23</div>
+                                    <div class="stat_2_value_1_container_value">12</div>
+                                    <div class="stat_2_value_1_container_value">3</div>
+                                    <div class="stat_2_value_1_container_value">23</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat_3 slide">
+                            <!-- mirror -->
+                            <div class="mirror_box">
+                                <span class="label_stats">MIRROR</span>
+                                <div class="mirror_grid">
+                                    <div>12.71</div>
+                                    <div>6</div>
+                                    <div>13.31</div>
+                                    <div>8</div>
+                                    <div>13.31</div>
+                                    <div>8</div>
+                                </div>
+                            </div>
+                            <!-- end mirror -->
+
+                            <!-- sectors -->
+                            <div class="sector_box">
+                                <span class="label_stats">SECTEURS</span>
+                                <div class="sectors_grid">
+                                    <div>A</div>
+                                    <div>B</div>
+                                    <div>C</div>
+                                    <div>D</div>
+                                    <div>E</div>
+                                    <div>F</div>
+                                    <div>12</div>
+                                    <div>10</div>
+                                    <div>11</div>
+                                    <div>4</div>
+                                    <div>7</div>
+                                    <div>0</div>
+                                </div>
+                            </div>
+                            <!-- end sectors -->
+
+                            <!-- twin -->
+                            <div class="twins_box">
+                                <span class="label_stats">TWINS</span>
+                                <div class="twins_grid">
+                                    <div>12,14,20</div>
+                                    <div>4</div>
+                                </div>
+                            </div>
+                            <!-- end twin -->
+
+
+                            <!-- hot / cold -->
+                            <div class="hotCold_box">
+                                <span class="label_stats">HOT/COLD NUMBERS</span>
+                                <div class="hot_cold_grid">
+                                    <div>CHAUD</div>
+                                    <div class="colorRed">12</div>
+                                    <div class="colorBlack">23</div>
+                                    <div class="colorRed">17</div>
+                                    <div class="colorBlack">1</div>
+                                    <div class="colorRed">2</div>
+                                    <div class="colorRed">8</div>
+                                    <div>FROID</div>
+                                    <div class="colorRed">11</div>
+                                    <div class="colorRed">4</div>
+                                    <div class="colorBlack">7</div>
+                                    <div class="colorBlack">0</div>
+                                    <div class="colorBlack">7</div>
+                                    <div class="colorGreen">0</div>
+                                </div>
+                            </div>
+                            <!-- end hot / cold -->
+
+                            <!-- last resultat -->
+                            <div class="last_result_box">
+                                <span class="label_stats">DERNIER RESULTATS</span>
+                                <div class="last_result_grid">
+                                    <div>#404143</div>
+                                    <div class="colorRed">12</div>
+                                    <div>#404143</div>
+                                    <div class="colorRed">2</div>
+                                    <div>#404143</div>
+                                    <div class="colorRed">3</div>
+                                    <div>#404143</div>
+                                    <div class="colorBlack">4</div>
+                                    <div>#404143</div>
+                                    <div class="colorBlack">7</div>
+                                    <div>#404143</div>
+                                    <div class="colorBlack">9</div>
+                                </div>
+                            </div>
+                            <!-- end last resultat -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+           var elem = document.documentElement;
+           var result = confirm("L'affichage du jeu est optimisé pour les TV, ce sera interessant de passer en mode fullscreen!");
+        </script>
+            
+        <script src="./js/gsap.js"></script>
+        <script src="./js/inertiaPlugin.js"></script>
+        <script src="./js/segment.js"></script>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/JQueryRotate.min.js"></script>
+        <script src="./js/TweenMax.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/timetoleft.js"></script>
+        <script src="./green.js"></script>
+</body>
+
+</html>
