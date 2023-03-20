@@ -2,7 +2,7 @@ function initTimeToLeft() {
 
     let minute = 0;
 
-    let seconde = 60;
+    let seconde = 10;
 
     let time = `${minute}:${seconde}`;
 
@@ -23,6 +23,7 @@ function initTimeToLeft() {
 
 
     let timeLeft = gsap.timeline({ paused: true });
+
     timeLeft
         .to(time_box_left, {
             backgroundColor: 'red',
